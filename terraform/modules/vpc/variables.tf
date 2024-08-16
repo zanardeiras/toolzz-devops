@@ -3,9 +3,10 @@ variable "vpc_cidr" {
 }
 
 variable "public_subnets" {
-  description = "Lista dos CIDR publicos"
+  description = "List of public subnet CIDRs"
   type        = list(string)
 }
+
 
 variable "private_subnets" {
   description = "Lista dos Private CIDRS"

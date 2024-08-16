@@ -1,5 +1,5 @@
 variable "db_username" {
-  description = "nomo do usuario Root"
+  description = "nome do usuario Root"
 }
 
 variable "db_password" {
@@ -7,7 +7,12 @@ variable "db_password" {
   sensitive   = true
 }
 
+variable "vpc_id" {
+  description = "The ID of the VPC where the EKS cluster will be deployed."
+  type        = string
+}
+
 variable "subnet_ids" {
-  description = "Lista dos IDs da subnet da instancia RDS"
+  description = "IDs das Subnets para o RDS"
   type        = list(string)
 }
