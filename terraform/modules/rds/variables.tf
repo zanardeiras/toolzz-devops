@@ -8,7 +8,7 @@ variable "db_password" {
 }
 
 variable "vpc_id" {
-  description = "The ID of the VPC where the EKS cluster will be deployed."
+  description = "ID da VPC onde o cluster EKS será implantado."
   type        = string
 }
 
